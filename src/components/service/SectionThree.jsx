@@ -11,7 +11,7 @@ function SectionThree({data}) {
           <h1 className='md:text-3xl md:text-start text-center text-2xl  font-bold '>Vous avez besoin d’un service ou d’un devis ?</h1>
           <p className='md:w-[90%] font-semibold tracking-wide  leading-7 pb-5 text-center md:text-start'>Remplissez simplement un formulaire, et il sera transmis aux professionnels adaptés pour vous répondre rapidement.</p>
           <div className='md:text-start text-center'>
-           <button className='px-4 py-3 bg-primary border rounded-lg text-white font-semibold'>Demander un Devis</button>
+          <a href="/DemandeDevis"> <button className='px-4 py-3 bg-primary border rounded-lg text-white font-semibold'>Demander un Devis</button></a>
          </div>
         </div>
     </div>
