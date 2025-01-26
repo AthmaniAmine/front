@@ -28,7 +28,7 @@ function UserGreeting({ isSignedUp, isJoined, user, notifications, messages }) {
     try {
       
       // const response = await axios.post('https://dzartisansapp.onrender.com/auth/logout', {}, { withCredentials: true });
-      Cookies.remove('userSave', { path: '/', domain: 'front-flame-psi.vercel.app', secure: true, sameSite: 'None' });
+      Cookies.remove('userSave', { path: '/', domain: 'dzartisansapp.onrender.com', secure: true, sameSite: 'None' });
     // if (response.status === 200) {
     //   alert('Logged out successfully');
      
