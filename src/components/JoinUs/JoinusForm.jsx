@@ -17,7 +17,7 @@ const RejoignezNous = () => {
   ];
   useEffect(() => {
     // Replace with your actual API endpoint
-    axios.get("http://localhost:4000/services/get", { withCredentials: true })
+    axios.get("https://dzartisansapp.onrender.com/services/get", { withCredentials: true })
       .then(response => {
          const services = response.data
          
@@ -73,7 +73,7 @@ const RejoignezNous = () => {
     };
 
     // Send form data to backend
-    await axios.post("http://localhost:4000/switch", formData, { withCredentials: true })
+    await axios.post("https://dzartisansapp.onrender.com/switch", formData, { withCredentials: true })
       .then(response => {
         console.log("Data successfully submitted", response.data);
         navigate("/")

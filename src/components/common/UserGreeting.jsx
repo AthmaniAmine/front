@@ -4,7 +4,7 @@ import Notifications from './Notifications';
 import Messages from './Messages';
 import { FaSignOutAlt, FaUser, FaBars } from 'react-icons/fa';
 import axios from "axios";
-
+import Cookies from "js-cookie"
 
 function UserGreeting({ isSignedUp, isJoined, user, notifications, messages }) {
   const location = useLocation();
@@ -24,17 +24,17 @@ function UserGreeting({ isSignedUp, isJoined, user, notifications, messages }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
-  const handleLogout = async () => {
+  const handleLogout = () => {
     try {
       
-      const response = await axios.post('http://localhost:4000/auth/logout', {}, { withCredentials: true });
-
-    if (response.status === 200) {
-      alert('Logged out successfully');
-
-    } else {
-      throw new Error(`Logout failed with status: ${response.status}`);
-    }
+      // const response = await axios.post('https://dzartisansapp.onrender.com/auth/logout', {}, { withCredentials: true });
+      Cookies.remove('userSave', { path: '/', domain: 'front-flame-psi.vercel.app', secure: true, sameSite: 'None' });
+    // if (response.status === 200) {
+    //   alert('Logged out successfully');
+     
+    // } else {
+    //   throw new Error(`Logout failed with status: ${response.status}`);
+    // }
       
     } catch (error) {
       console.error('Error during logout:', error);

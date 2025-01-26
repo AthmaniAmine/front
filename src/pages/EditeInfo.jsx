@@ -6,7 +6,7 @@ const EditeInfo=() =>{
     const [user, setUser] = useState({});
       useEffect(() => {
         // Replace with your actual API endpoint
-        axios.get("http://localhost:4000/profile/getartisan", { withCredentials: true })
+        axios.get("https://dzartisansapp.onrender.com/profile/getartisan", { withCredentials: true })
           .then(response => {
             
             setUser(response.data);

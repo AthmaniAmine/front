@@ -14,7 +14,7 @@ const ServicePage = () => {
     useEffect(() => {
       if (id) {
         axios
-        .get(`http://localhost:4000/services/service/${id}`, { withCredentials: true })
+        .get(`https://dzartisansapp.onrender.com/services/service/${id}`, { withCredentials: true })
         .then(response => {
           console.log("this is response", response.data);
           // Ensure the data is an array before setting it

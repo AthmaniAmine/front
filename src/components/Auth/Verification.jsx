@@ -20,7 +20,7 @@ const Verification = ()=>{
             return;
           }
         try {
-          const response = await axios.post("http://localhost:4000/auth/verify-otp", { otp });
+          const response = await axios.post("https://dzartisansapp.onrender.com/auth/verify-otp", { otp });
           
           if (response.status === 200) {
             navigate("/login"); 

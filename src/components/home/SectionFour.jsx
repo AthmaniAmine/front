@@ -13,8 +13,11 @@ function SectionFour() {
             Cliquez sur « REJOIGNEZ-NOUS » pour débuter votre aventure en tant qu’artisan, simplifiez la gestion de vos services et développez vos revenus dès aujourd’hui !
           </p>
         </div>
-        <button className='bg-primary text-white font-semibold px-4 py-3 border rounded-lg w-2/6'>Rejoignez nous</button>
-      </div>
+        <a href="/JoinUs">
+  <button className='bg-primary text-white font-semibold px-4 py-3 border rounded-lg w-2/6'>
+    Rejoignez nous
+  </button>
+</a>      </div>
       <div className='col-span-12 items-center md:col-span-6 grid grid-cols-12 gap-6'>
         <div className='grid grid-flow-row col-span-5 gap-8'>
           <img className='md:h-full md:w-full w-0 h-0 object-cover rounded-lg shadow-lg' src={img1} alt='Artisan secondaire 1' />

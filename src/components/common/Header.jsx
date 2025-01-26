@@ -10,7 +10,7 @@ function Header() {
   const [isJoined, setIsJoined] = useState(false);
   useEffect(() => {
     // Replace with your actual API endpoint
-    axios.get("http://localhost:4000/auth/user", { withCredentials: true })
+    axios.get("https://dzartisansapp.onrender.com/auth/user", { withCredentials: true })
       .then(response => {
         
         setUser(response.data);

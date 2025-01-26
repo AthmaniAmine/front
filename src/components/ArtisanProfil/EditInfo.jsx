@@ -84,7 +84,7 @@ function EditInfo({ data }) {
           setFormData({ ...formData, photo: newPhoto });
         }
         try {
-          const response = await axios.post('http://localhost:4000/profile/updateProfile', {
+          const response = await axios.post('https://dzartisansapp.onrender.com/profile/updateProfile', {
             nom: formData.name,
             prenom: formData.fname,
             email: formData.email,

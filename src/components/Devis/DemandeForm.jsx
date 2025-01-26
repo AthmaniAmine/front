@@ -19,7 +19,7 @@ const DemandeDevis = () => {
     // Replace with your actual API endpoint
 
       
-    axios.get("http://localhost:4000/services/get", { withCredentials: true })
+    axios.get("https://dzartisansapp.onrender.com/services/get", { withCredentials: true })
       .then(response => {
         console.log(response.data)
          const services = response.data
@@ -104,7 +104,7 @@ const DemandeDevis = () => {
       });
       // Make a POST request to the backend
       const response = await axios.post(
-        "http://localhost:4000/devis/send_devis",
+        "https://dzartisansapp.onrender.com/devis/send_devis",
         requestData,
         { withCredentials: true }
       );

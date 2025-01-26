@@ -9,7 +9,7 @@ const DemandeDeviss=() =>{
     // Replace with your actual API endpoint
 
       
-    axios.get("http://localhost:4000/devis/get_devis_by_user_id", { withCredentials: true })
+    axios.get("https://dzartisansapp.onrender.com/devis/get_devis_by_user_id", { withCredentials: true })
       .then(response => {
         console.log(response.data)
          

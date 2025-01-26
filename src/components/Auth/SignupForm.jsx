@@ -33,7 +33,7 @@ const SignupForm = () => {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:4000/auth/register", {
+      const response = await axios.post("https://dzartisansapp.onrender.com/auth/register", {
         nom,
         prenom,
         email,

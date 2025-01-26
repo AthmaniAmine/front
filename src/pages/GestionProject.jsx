@@ -9,7 +9,7 @@ const GestionProject=() =>{
     // Replace with your actual API endpoint
 
       
-    axios.get("http://localhost:4000/devis/get_devis_for_artisan", { withCredentials: true })
+    axios.get("https://dzartisansapp.onrender.com/devis/get_devis_for_artisan", { withCredentials: true })
       .then(response => {
         console.log(response.data)
          
@@ -23,7 +23,7 @@ const GestionProject=() =>{
         console.error("Error fetching user data:", error);
         
       });
-      axios.get("http://localhost:4000/devis/get_artisan_projects", { withCredentials: true })
+      axios.get("https://dzartisansapp.onrender.com/devis/get_artisan_projects", { withCredentials: true })
       .then(response => {
         console.log(response.data)
          
