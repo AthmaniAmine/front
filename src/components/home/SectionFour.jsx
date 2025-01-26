@@ -13,9 +13,9 @@ function SectionFour() {
             Cliquez sur « REJOIGNEZ-NOUS » pour débuter votre aventure en tant qu’artisan, simplifiez la gestion de vos services et développez vos revenus dès aujourd’hui !
           </p>
         </div>
-        <a href="/JoinUs">
+        <a href="/DemandeDevis">
   <button className='bg-primary text-white font-semibold px-4 py-3 border rounded-lg w-2/6'>
-    Rejoignez nous
+    Demander un devis
   </button>
 </a>      </div>
       <div className='col-span-12 items-center md:col-span-6 grid grid-cols-12 gap-6'>
